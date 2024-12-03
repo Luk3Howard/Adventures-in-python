@@ -36,10 +36,11 @@ dreamGuestList.insert(0,'the swiftologist') # Beth will be thrilled lol
 dreamGuestList.insert(2,'sally pooface') # stinky but will bring a good present
 dreamGuestList.append('jeffrey star') # Beth, Sally and the swiftologist said they wouldn't come unless I invited them. God I hate planning parties.
 
-print(f"punted:", excusedGuest)
-print(f"current glist", dreamGuestList)
+print(f"\npunted:", excusedGuest)
+print(f"current list:", dreamGuestList)
 
 print(f"\nUpdated Party invites for all, including newly invited guests:")
+print(f"\nThe number of party invites currently sits at: ", len(dreamGuestList))
 print(f"\t{dreamGuestList[0].title()}, here's the details for the party: swing by Fanny Bawz Manor about from 7pm for a night of good food and entertainment - come hungry!")
 print(f"\t{dreamGuestList[1].title()}, here's the details for the party: swing by Fanny Bawz Manor about from 7pm for a night of good food and entertainment - come hungry!")
 print(f"\t{dreamGuestList[2].title()}, here's the details for the party: swing by Fanny Bawz Manor about from 7pm for a night of good food and entertainment - come hungry!")
@@ -61,13 +62,13 @@ print(f"\t{excusedGuest4.title()}, I'm so sorry but I'm having to cancel the par
 excusedGuest5 = dreamGuestList.pop(1)
 print(f"\t{excusedGuest5.title()}, I'm so sorry but I'm having to cancel the party due to my table not arriving in time.")
 
-print(f"punted:", excusedGuest)
-print(f"current glist", dreamGuestList)
+print(f"\npunted:", excusedGuest)
+print(f"current list", dreamGuestList)
 
 #Let the two remaining guests they can still come and chill in the loungue!
 print(f"\nBetter let my favourites know they can still come over on Saturday.")
-print(f"\t{dreamGuestList[0].title()}, just to let you know I'll still be free this Saturday and with all this food...please come over and play some board games with me and {dreamGuestList[1].title()}")
-print(f"\t{dreamGuestList[1].title()}, just to let you know I'll still be free this Saturday and with all this food...please come over and play some board games with me and {dreamGuestList[0].title()}")
+print(f"\t{dreamGuestList[0].title()}, just to let you know I'll still be free this Saturday and with all this food...please come over and play some board games with me and {dreamGuestList[1].title()}!")
+print(f"\t{dreamGuestList[1].title()}, just to let you know I'll still be free this Saturday and with all this food...please come over and play some board games with me and {dreamGuestList[0].title()}!")
 
 # Take the remaining names of the list, then print it to confirm it's empty
 del dreamGuestList[1]
